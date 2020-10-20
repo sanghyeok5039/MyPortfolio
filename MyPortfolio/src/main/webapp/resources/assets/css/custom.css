@@ -1,0 +1,435 @@
+/* 전체 영역을 통틀어서 스타일 정의 */
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+* {
+	font-family : 'Nanum Gothic';
+}
+
+.nav-menu {
+    display: block;
+    padding: .5rem 1rem;
+}
+
+.nav-menu:hover, .nav-menu:focus {
+  text-decoration: none;
+}
+
+.nav-menu.disabled {
+  color: #6c757d;
+  pointer-events: none;
+  cursor: default;
+}
+
+.navbar-expand-lg .navbar-nav .nav-menu {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+.navbar-nav .nav-menu {
+    padding-right: 0;
+    padding-left: 0;
+}
+.navbar-dark .navbar-nav .nav-menu {
+    color: #ffbf00;
+    font-size: 1.5rem;
+}
+
+.navbar-dark .navbar-nav .nav-menu:hover, .navbar-dark .navbar-nav .nav-menu:focus {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.navbar-dark .navbar-nav .nav-menu.disabled {
+  color: rgba(255, 255, 255, 0.25);
+}
+
+.navbar-dark .navbar-nav .show > .nav-menu,
+.navbar-dark .navbar-nav .active > .nav-menu,
+.navbar-dark .navbar-nav .nav-menu.show,
+.navbar-dark .navbar-nav .nav-menu.active {
+  color: #fff;
+}
+
+.loginPop-content {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  margin-bottom: 1rem;
+}
+
+.form-container {
+  width: 540px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 67.5px
+}
+
+.board-container {
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 67.5px
+}
+
+.write-container {
+  width: 700px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 67.5px
+}
+
+.loginPop-container {
+  width: 300px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 67.5px
+}
+
+.findAccount-container {
+  width: 700px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 67.5px
+}
+
+/* 버튼 색지정 */
+/* 팝업 로그인 버튼색 */
+.btn-loginPop {
+  color: #fff;
+  font-weight: bold;
+  background-color: #6799FF;
+  border-color: #B2CCFF;
+  width: 270px;
+  margin-bottom: 10px;
+}
+
+/* 로그인 버튼 색 */
+.btn-login {
+  color: #fff;
+  font-weight: bold;
+  background-color: #6799FF;
+  border-color: #B2CCFF;
+  width: 252.7px;
+}
+
+
+/* */
+.disabled {
+	pointer-events: none;
+	background-color: #ffffff;
+	color: #555;
+	opacity: 1;
+}
+
+.write-reply{
+	border : 2px solid gray;
+	border-radius: 10px;
+	padding : 0.5rem;
+	text-align:center;
+}
+.write-reply-form{
+	margin:0.5rem;
+}
+
+.board-form{
+	padding:2rem;
+	border:1px solid #black;
+}
+
+.text-left{
+	text-align:left;
+	padding:10px;
+}
+
+
+.myPage-wrap {
+	overflow:hidden; 
+	position:relative; 
+	width:1000px; 
+	margin:0 auto;
+}
+
+.myPage-menu {
+	position:absolute; 
+	top:0px; 
+	left:0px; 
+	bottom:0px; 
+	width:200px; 
+	color:#FFFFFF; 
+	background:#343a40;
+}
+
+.menu-content {
+	margin-top:150px;
+}
+
+.menu-content .content{
+	text-align: center;
+	margin:5px;
+	padding:20px;
+	background-color:#343a40;
+}
+
+.myPage-content {
+	float:right;  
+	display:block; 
+	width:750px; 
+	min-height:500px;
+}
+
+/* 게시판의 제목 css */
+.title a{
+	text-decoration:none;
+	color:black;
+}
+
+/* 게시판 리스트 테이블 css */
+.board-table{
+	width: 100%;
+	margin-bottom: 1rem;
+	color: #212529;
+	border-collapse: separate;
+}
+	
+.board-table td, .board-table th {
+    padding: .75rem 1.5rem;
+ 	vertical-align: center;
+  	border: 1px solid #dee2e6;
+}
+
+/* 게시판 페이징 css */
+.pageNumber{
+	text-decoration: none;
+	color: black;
+}
+	
+.pageNumber a:hover, .title a:hover {
+	text-decoration: none;
+	color: #4374D9;
+}
+
+/*마이페이지 좌측 메뉴 a 태그 css*/
+.myPage-menu a {
+	font-size:18px;
+	font-weight:bold;
+	text-decoration:none;
+	color:gold;
+}
+
+.myPage-menu a:hover {
+	text-decoration:none;
+	color:#4374D9;
+}
+
+.hr-gold{
+	background-color:gold ; 
+	height:1px
+}
+
+/*마이페이스 우측 내용부분 테이블 css*/
+.myPage-table{
+	width: 100%;
+	margin-bottom: 1rem;
+	color: #212529;
+	border-collapse: collapse;
+	font-size:16px;
+}
+
+.myPage-table .common{
+	width:30%;
+	font-weight:bold;
+	padding: 20px 50px;
+	border: 1px solid #dee2e6;
+	border-left:none;		
+}
+
+.myPage-table .info{
+	width:70%;
+	padding: 20px;
+ 	border: 1px solid #dee2e6;
+ 	border-right:none;
+}
+
+.myPage-btn{
+	color: #fff;
+	background-color: #4374D9;
+	border-color: #4374D9;
+	width: 100px;
+}
+
+/* 글쓰기, 글수정 table css */
+.write-table{
+	width: 100%;
+	margin-bottom: 1rem;
+	color: #212529;
+	border-collapse: seperate;
+}
+
+.write-table .common{
+	text-align:center;
+	width:25%;
+	font-weight:bold;
+	border: 1px solid #dee2e6;
+	border-left:none;		
+}
+
+.write-table .content{
+	text-align:center;
+	width:25%;
+	font-weight:bold;
+	border: 1px solid #dee2e6;
+	border-left:none;
+	height:300px;	
+}
+
+.write-table .info{
+	width:70%;
+	padding: 20px;
+ 	border: 1px solid #dee2e6;
+ 	border-right:none;
+}
+
+/* 게시글 table */
+.article-table{
+	width: 100%;
+	margin-bottom: 1rem;
+	color: #212529;
+	border-collapse: seperate;
+}
+
+.article-table .common{
+	text-align:center;
+	width:15%;
+	font-weight:bold;
+	border: 1px solid #dee2e6;	
+}
+
+/* common에 높이 추가 */
+.article-table .content{
+	text-align:center;
+	width:25%;
+	font-weight:bold;
+	border: 1px solid #dee2e6;
+	height:300px;
+}
+
+.article-table .title{
+	text-align:left;
+	width:50%;
+	border: 1px solid #dee2e6;
+	padding:15px;
+}
+
+.article-table .small{
+	text-align:center;
+	width:30%;
+	border: 1px solid #dee2e6;
+}
+
+/* textarea css */
+.txt_input {
+    display: block;
+    width: 95%;
+    min-height: 40px;
+    padding: 11px 12px 10px;
+    border: 1px solid #ebecef;
+    box-sizing: border-box;
+    overflow: hidden;
+    resize: none;
+    word-break: break-all;
+    font-size: 15px;
+    letter-spacing: -.23px;
+    line-height: 17px;
+    outline: none;
+	margin:15px;
+}
+
+/* 계정 찾기에서 사용하는 css */
+/* 전체적인 틀을 잡아주는 css */
+.find-wrap {
+	overflow:hidden; 
+	position:relative; 
+	width:1000px; 
+	margin:0 auto;
+	height:600px;
+}
+
+/* 계정찾기 제목 */
+.fint-title{
+	margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* 아이디를 찾는 영역 */
+.find-id {
+	position:absolute; 
+	top:0px; 
+	left:0px; 
+	bottom:0px; 
+	width:500px; 
+	color:#000; 
+	background:white;
+	margin-top:200px;
+	text-align:center;
+}
+
+/* 비밀번호를 찾는 영역 */
+.find-pw {
+	position:absolute; 
+	top:0px; 
+	left:500px; 
+	bottom:0px; 
+	width:500px; 
+	color:#000; 
+	background:white;
+	margin-top:200px;
+	text-align:center;
+}
+
+/* 계정을 찾기 위해 필요한 정보를 입력하는 input 태그 css */
+.find-input {
+    display: block;
+    width: 80%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+   	margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* 계정찾기 버튼 색 */
+.btn-find {
+  color: #fff;
+  font-weight: bold;
+  background-color: #6799FF;
+  border-color: #B2CCFF;
+  width: 400px;
+}

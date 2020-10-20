@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.spring.MyPortfolio.dao.IReplyDao">
+
+	<select id="selectOne" resultType="replyDto">
+		SELECT * FROM BOARD_REPLY
+		WHERE REPLY_NUM = #{reply_num}
+	</select>
+
+	<select id="selectAll" resultType="replyDto">
+		SELECT * FROM BOARD_REPLY
+		WHERE BOARD_NUM = #{board_num}
+	</select>
+	
+	<insert id="insert">
+		<selectKey keyProperty="reply_num" resultType="int" order="BEFORE">
+			SELECT BOARD_REPLY_SQ.NEXTVAL FROM DUAL
+		</selectKey>
+		INSERT INTO BOARD_REPLY (BOARD_NUM, REPLY_NUM, WRITER, COMMENTS, REGDATE)
+		VALUES(#{board_num},#{reply_num},#{writer},#{comments},SYSDATE)
+	</insert>
+	
+	<update id="update">
+		UPDATE BOARD_REPLY
+		SET    COMMENTS=#{comments}
+		WHERE  REPLY_NUM=#{reply_num}
+	</update>
+	
+	<delete id="delete">
+		DELETE FROM BOARD_REPLY
+		WHERE REPLY_NUM=#{reply_num}
+	</delete>
+	
+</mapper>
